@@ -11,7 +11,7 @@ viewPage();
 }
 
 void viewPage(){
-  print('\n\n    Welcome Vocabulary App \n\n');
+  print('\n\n    Welcome to Vocabulary App \n\n');
   print('  1 -> Add new Vocabulary\n  2 -> Search Vocabulary\n  3 -> View Vocabulary\n  4 -> Test\n  0 -> Exit\n');
   int command = io.number;
   switch(command){
