@@ -9,20 +9,20 @@ SearchPage(){
 }
 
 void searchVocabulary() {
-  print('\n\n    Search - Qidiruv: \n');
+  print('\n\n    Search - Qidiruv: ');
   io.console('Enter text->');
   String search = io.text;
   int count = 0;
   for (var element in vocabulary) {
     if (element.word == search || element.translation == search) {
-      print('${element.word}-${element.translation}');
+      print('${element.word}-${element.translation}\n');
       count++;
     }
   }
   if (count == 0) {
     print('Vocabulary is not found 🤷‍♂️');
   }
-  print('1 -> Do you want to search again?');
+  print('\n1 -> Do you want to search again?');
   print('2 -> Back');
   print('0 -> Exit!');
   io.console('Enter ->');
